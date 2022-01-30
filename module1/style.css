@@ -1,0 +1,20 @@
+@import "./css/base.css";
+@import "./css/header.css";
+@import "./css/wellcome.css";
+@import "./css/about.css";
+@import "./css/features.css";
+@import "./css/testimonials.css";
+@import "./css/slider.css";
+@import "./css/footer.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  padding: 60px 0;
+  background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
+}

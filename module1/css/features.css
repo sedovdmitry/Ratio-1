@@ -1,0 +1,129 @@
+.features__container {
+  margin-top: 150px;
+}
+.features__title {
+  text-align: center;
+}
+
+.features__text {
+  margin: 50px auto 100px;
+  max-width: 584px;
+  text-align: center;
+}
+
+.cards {
+  list-style: none;
+}
+
+.features__cards {
+  display: grid;
+  column-gap: 45px;
+  row-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 530px));
+  justify-content: space-between;
+}
+
+.cards__content {
+  display: grid;
+  justify-items: flex-start;
+  row-gap: 20px;
+}
+
+.cards__item {
+  padding: 49px 49px 33px 0;
+  height: 358px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 29px;
+  position: relative;
+}
+
+.cards__img {
+  max-width: 100%;
+  object-fit: contain;
+  align-self: center;
+}
+
+.cards__bg {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 130%;
+}
+
+.cards__text {
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.card__link {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 160%;
+  color: #212353;
+  display: flex;
+  align-items: center;
+  transition: transform 0.1s ease;
+}
+
+.card__link::after {
+  content: "";
+  background: url(../img/arrow.png) center center no-repeat;
+  display: block;
+  width: 25px;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.card__link:hover {
+  transform: scale(110%);
+}
+
+@media screen and (max-width: 1200px) {
+  .features__cards {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .features__container {
+    margin-top: 75px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cards__text {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .features__container {
+    margin-top: 70px;
+  }
+  .features__text {
+    margin: 30px auto;
+    max-width: 584px;
+    text-align: center;
+  }
+  .cards__item {
+    padding: 20px 10px 20px 0;
+    column-gap: 10px;
+  }
+  .cards__content {
+    row-gap: 10px;
+  }
+  .card__link::after {
+    margin-left: 10px;
+  }
+  .cards__bg {
+    width: 100%;
+    object-fit: fill;
+  }
+}
