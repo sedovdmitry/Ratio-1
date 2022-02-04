@@ -22,6 +22,7 @@
   margin-left: 20px;
 }
 
+/*TODO: по возможности используйте английские слова без опечаток -> footer__address */
 .footer__adress {
   font-weight: 500;
   font-size: 16px;
@@ -35,6 +36,7 @@
   margin-bottom: 36px;
 }
 
+/*TODO: по возможности используйте английские слова без опечаток -> footer__copyright (нет во множественном числе) */
 .footer__copyrigths {
   font-size: 12px;
   line-height: 180%;
@@ -63,7 +65,7 @@
   border-radius: 100%;
   margin: 0 7px;
 }
-
+/*TODO: нулевым значениям не нужны единицы измерения, лучше box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); */
 .footer__button:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
